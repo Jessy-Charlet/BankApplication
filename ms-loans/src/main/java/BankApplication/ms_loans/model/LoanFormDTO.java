@@ -8,22 +8,12 @@ import lombok.ToString;
 import java.time.LocalDate;
 import java.util.Date;
 
-@Entity
 @Getter
 @Setter
-@ToString
-public class Loan {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "loan_number")
-    private int loanNumber;
+public class LoanFormDTO {
 
     @Column(name = "customer_id")
     private int customerId;
-
-    @Column(name="start_dt")
-    private LocalDate startDt;
 
     @Column(name = "loan_type")
     private String loanType;
@@ -36,8 +26,5 @@ public class Loan {
 
     @Column(name = "outstanding_amount")
     private int outstandingAmount;
-
-    @Column(name = "create_dt")
-    private LocalDate createdDt;
 
 }
