@@ -3,5 +3,8 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/ms-accounts/src/main/resources/db/data.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/ms-accounts/src/main/resources/db/schema.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/ms-cards/src/main/resources/db/schema.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/ms-loans/src/main/resources/db/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/ms-loans/src/main/resources/db/schema.sql" dialect="H2" />
   </component>
 </project>

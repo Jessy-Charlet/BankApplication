@@ -21,12 +21,6 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-
-//    @PostMapping("/add")
-//    public String addCustomer(@RequestBody CustomerFormDTO customer) {
-//        customerService.saveCustomer(customer);
-//        return "Customer added successfully";
-//    }
     @PostMapping("/add")
     public ResponseEntity<Customer> addCustomer(@RequestBody CustomerFormDTO request) {
         if(request.getEmail() == null || request.getName() == null || request.getMobileNumber() == null){
