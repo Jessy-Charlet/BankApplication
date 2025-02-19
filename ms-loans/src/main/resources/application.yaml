@@ -1,8 +1,8 @@
 #server:
-#    port: 8081
+#    port: 8082
 #spring:
 #    application:
-#        name: ms-cards
+#        name: ms-loans
 #    datasource:
 #        # url: jdbc:h2:mem:testdb # D�commenter cette ligne si vous souhaitez utiliser une base de donn�es en m�moire pour des tests.
 #        url: jdbc:h2:file:./data/demo;AUTO_SERVER=true
@@ -28,6 +28,6 @@
 ##            data-locations: classpath:db/data.sql
 spring:
     application:
-        name: ms-cards
+        name: ms-loans
     config:
         import: configserver:http://localhost:8079/

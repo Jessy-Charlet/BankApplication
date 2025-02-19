@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/ms-accounts/pom.xml" />
         <option value="$PROJECT_DIR$/ms-cards/pom.xml" />
         <option value="$PROJECT_DIR$/ms-loans/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-configServer/pom.xml" />
       </list>
     </option>
   </component>

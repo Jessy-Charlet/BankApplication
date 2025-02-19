@@ -1,0 +1,28 @@
+server:
+    port: 8082
+spring:
+    application:
+        name: ms-loans
+    datasource:
+        # url: jdbc:h2:mem:testdb # D�commenter cette ligne si vous souhaitez utiliser une base de donn�es en m�moire pour des tests.
+        url: jdbc:h2:file:./data/demo;AUTO_SERVER=true
+        username: admin
+        password: password
+        driver-class-name: org.h2.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+        defer-datasource-initialization: true
+    h2:
+        console:
+            path: /h2-console
+            enabled: true
+#    sql:
+#        init:
+#            mode: always
+#            schema-locations: classpath:db/schema.sql
+#            data-locations: classpath:db/data.sql
