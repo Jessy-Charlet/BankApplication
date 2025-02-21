@@ -21,7 +21,7 @@ public class CustomerService {
     }
 
 
-    public Account findCustomerById(CustomerIdDTO customerId){
+    public Customer findCustomerById(CustomerIdDTO customerId){
         return customerRepository.findCustomerByCustomerId(customerId.getCustomerId()).get();
     }
 

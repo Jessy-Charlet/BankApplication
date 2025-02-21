@@ -79,6 +79,18 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<!--			Dependencies below to solve Eureka Server Vulnerabilities -->
+			<dependency>
+				<groupId>com.thoughtworks.xstream</groupId>
+				<artifactId>xstream</artifactId>
+				<version>1.4.21</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient-cache</artifactId>
+				<version>4.5.13</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-configServer" />
+        <module name="ms-discovery" />
       </profile>
       <profile name="Annotation profile for ms-accounts" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,6 +28,7 @@
       <module name="ms-accounts" options="-parameters" />
       <module name="ms-cards" options="-parameters" />
       <module name="ms-configServer" options="-parameters" />
+      <module name="ms-discovery" options="-parameters" />
       <module name="ms-loans" options="-parameters" />
     </option>
   </component>

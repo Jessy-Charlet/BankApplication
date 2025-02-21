@@ -12,7 +12,7 @@ import java.util.Optional;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long>, CrudRepository<Customer, Long> {
     @Query(value="SELECT u FROM Customer u WHERE u.customerId=:customerId")
-    public Optional<Account> findCustomerByCustomerId(int customerId);
+    public Optional<Customer> findCustomerByCustomerId(int customerId);
 
     boolean existsByEmail(String email);
 }
